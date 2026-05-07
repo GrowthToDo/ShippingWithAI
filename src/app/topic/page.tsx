@@ -32,6 +32,34 @@ export default function ThinkingThroughTopic() {
 
       <div className="space-y-10">
 
+        {/* What to bring */}
+        <section>
+          <h2 className="text-xl font-semibold font-[family-name:var(--font-space-grotesk)] text-[#1c1b1b] mb-4">
+            How to choose a topic
+          </h2>
+          <p className="text-sm text-[#1c1b1b] mb-4">Some examples of what that could look like:</p>
+          <ul className="space-y-2.5 mb-6">
+            {[
+              "Something that saved you a significant amount of time",
+              "A process you fully automated",
+              "Output quality that jumped noticeably",
+              "A workflow that made or recovered real money",
+              "Something manual you just don't do by hand anymore",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-3 text-sm text-[#1c1b1b] font-medium">
+                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#994200] shrink-0" />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p className="text-sm text-[#1c1b1b] leading-relaxed mb-4">
+            One thing to keep in mind: the people watching are smart but not necessarily technical. The best episodes show something genuinely impressive in a way that makes the first step feel doable. You don&apos;t need to dumb it down. Just bring them in.
+          </p>
+          <p className="text-sm text-[#1c1b1b] leading-relaxed">
+            If you&apos;re deciding between a few options, go with the one that changed something real for you and that someone could realistically start using the same week.
+          </p>
+        </section>
+
         {/* What's in the doc */}
         <section>
           <h2 className="text-xl font-semibold font-[family-name:var(--font-space-grotesk)] text-[#1c1b1b] mb-4">
