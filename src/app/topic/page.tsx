@@ -117,7 +117,7 @@ export default function ThinkingThroughTopic() {
             rel="noopener noreferrer"
             className="inline-block bg-[#994200] text-white text-sm font-semibold px-6 py-3 rounded-sm hover:bg-[#7a3500] transition-colors"
           >
-            Open the doc
+Make a copy of the doc
           </a>
         </div>
 
