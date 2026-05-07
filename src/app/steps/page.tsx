@@ -27,48 +27,47 @@ export default function Steps() {
 
       <div className="space-y-4">
 
-        <Link href="/topic" className="flex gap-5 p-5 bg-[#f0ebe9] rounded-sm hover:bg-[#e8e0dc] transition-colors group block">
-          <span className="text-2xl font-bold text-[#994200] tabular-nums leading-none shrink-0 mt-0.5">01</span>
-          <div>
-            <p className="text-sm font-semibold text-[#1c1b1b] group-hover:text-[#994200] transition-colors">Lock in on a topic</p>
+        <Link href="/topic" className="flex items-center gap-5 p-5 bg-[#f0ebe9] rounded-sm hover:bg-[#e8e0dc] transition-colors group block">
+          <span className="text-2xl font-bold text-[#994200] tabular-nums leading-none shrink-0">01</span>
+          <div className="flex-1">
+            <p className="text-sm font-semibold text-[#1c1b1b]">Lock in on a topic</p>
             <p className="text-sm text-[#1c1b1b] mt-1 leading-relaxed">
               Work through a short template to nail the angle for your episode before we book anything.
             </p>
-            <p className="text-xs text-[#994200] mt-2 font-medium">shippingwith.ai/topic</p>
           </div>
+          <span className="text-[#994200] text-lg shrink-0 group-hover:translate-x-1 transition-transform">→</span>
         </Link>
 
-        <Link href="/schedule" className="flex gap-5 p-5 bg-[#f0ebe9] rounded-sm hover:bg-[#e8e0dc] transition-colors group block">
-          <span className="text-2xl font-bold text-[#994200] tabular-nums leading-none shrink-0 mt-0.5">02</span>
-          <div>
-            <p className="text-sm font-semibold text-[#1c1b1b] group-hover:text-[#994200] transition-colors">Pick a time to record</p>
+        <Link href="/schedule" className="flex items-center gap-5 p-5 bg-[#f0ebe9] rounded-sm hover:bg-[#e8e0dc] transition-colors group block">
+          <span className="text-2xl font-bold text-[#994200] tabular-nums leading-none shrink-0">02</span>
+          <div className="flex-1">
+            <p className="text-sm font-semibold text-[#1c1b1b]">Pick a time to record</p>
             <p className="text-sm text-[#1c1b1b] mt-1 leading-relaxed">
               Book a slot that works for you. Sessions run under thirty minutes.
             </p>
-            <p className="text-xs text-[#994200] mt-2 font-medium">shippingwith.ai/schedule</p>
           </div>
+          <span className="text-[#994200] text-lg shrink-0 group-hover:translate-x-1 transition-transform">→</span>
         </Link>
 
-        <div className="flex gap-5 p-5 bg-[#f0ebe9] rounded-sm">
-          <span className="text-2xl font-bold text-[#994200] tabular-nums leading-none shrink-0 mt-0.5">03</span>
-          <div>
+        <div className="flex items-center gap-5 p-5 bg-[#f0ebe9] rounded-sm">
+          <span className="text-2xl font-bold text-[#994200] tabular-nums leading-none shrink-0">03</span>
+          <div className="flex-1">
             <p className="text-sm font-semibold text-[#1c1b1b]">Get your episode brief</p>
             <p className="text-sm text-[#1c1b1b] mt-1 leading-relaxed">
-              At least 3 days before the recording, we&apos;ll send you the questions we&apos;ll ask. Everything else you need to know is at the link below.
+              At least 3 days before the recording, we&apos;ll send you the questions we&apos;ll ask. Everything else you need to know is <Link href="/brief" className="text-[#994200] underline underline-offset-2">here</Link>.
             </p>
-            <Link href="/brief" className="text-xs text-[#994200] mt-2 font-medium block hover:underline">shippingwith.ai/brief</Link>
           </div>
         </div>
 
-        <Link href="/record" className="flex gap-5 p-5 bg-[#f0ebe9] rounded-sm hover:bg-[#e8e0dc] transition-colors group block">
-          <span className="text-2xl font-bold text-[#994200] tabular-nums leading-none shrink-0 mt-0.5">04</span>
-          <div>
-            <p className="text-sm font-semibold text-[#1c1b1b] group-hover:text-[#994200] transition-colors">Run through the pre-recording checklist</p>
+        <Link href="/record" className="flex items-center gap-5 p-5 bg-[#f0ebe9] rounded-sm hover:bg-[#e8e0dc] transition-colors group block">
+          <span className="text-2xl font-bold text-[#994200] tabular-nums leading-none shrink-0">04</span>
+          <div className="flex-1">
+            <p className="text-sm font-semibold text-[#1c1b1b]">Run through the pre-recording checklist</p>
             <p className="text-sm text-[#1c1b1b] mt-1 leading-relaxed">
               Go through the checklist ideally the day before. Mic, camera, lighting, internet. Everything so recording day runs smoothly.
             </p>
-            <p className="text-xs text-[#994200] mt-2 font-medium">shippingwith.ai/record</p>
           </div>
+          <span className="text-[#994200] text-lg shrink-0 group-hover:translate-x-1 transition-transform">→</span>
         </Link>
 
       </div>
