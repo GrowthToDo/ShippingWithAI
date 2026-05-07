@@ -8,7 +8,7 @@ export default function BeforeWeRecord() {
       <div className="mb-10 flex items-center gap-3">
         <Image src="/cover.png" alt="Shipping with AI" width={40} height={40} className="rounded-full object-cover" />
         <p className="text-sm font-semibold uppercase tracking-widest text-[#994200]">
-          Step 2
+          Step 3
         </p>
       </div>
 
@@ -144,68 +144,6 @@ export default function BeforeWeRecord() {
             </div>
 
           </div>
-        </section>
-
-        <div className="border-t border-[#ddc1b3]" />
-
-        {/* How the episode flows */}
-        <section>
-          <h2 className="text-xl font-semibold font-[family-name:var(--font-space-grotesk)] text-[#1c1b1b] mb-5">
-            How the episode flows
-          </h2>
-          <div className="space-y-3">
-            {[
-              {
-                step: "01",
-                label: "Who you are",
-                desc: "A brief introduction. What you do, what you build, what world you operate in.",
-              },
-              {
-                step: "02",
-                label: "The why",
-                desc: "What drove you to build this workflow. What problem were you sitting with, what broke, what frustrated you enough to find a better way.",
-              },
-              {
-                step: "03",
-                label: "The walkthrough",
-                desc: "This is the core of the episode. Share your screen and walk us through exactly how it works, like you'd explain it to a teammate. The tools, the prompts, the decisions, all of it.",
-              },
-              {
-                step: "04",
-                label: "The payoff",
-                desc: "What changed for you once this was working. Time saved, money made, something you'll never do manually again. And what someone watching could take from it and use tomorrow.",
-              },
-            ].map(({ step, label, desc }) => (
-              <div key={step} className="flex gap-5 p-4 bg-[#f0ebe9] rounded-sm">
-                <span className="text-2xl font-bold text-[#994200] tabular-nums leading-none shrink-0 mt-0.5">
-                  {step}
-                </span>
-                <div>
-                  <p className="text-sm font-semibold text-[#1c1b1b]">{label}</p>
-                  <p className="text-sm text-[#1c1b1b] mt-0.5">{desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <p className="text-sm text-[#1c1b1b] leading-relaxed mt-4">
-            Throughout all of this we&apos;ll ask follow-up questions as you go. The conversation stays live. Nothing is rigid.
-          </p>
-        </section>
-
-        {/* Practicalities */}
-        <section className="bg-[#994200]/8 border border-[#994200]/20 rounded-sm p-6">
-          <h2 className="text-xl font-semibold font-[family-name:var(--font-space-grotesk)] text-[#1c1b1b] mb-3">
-            A few practicalities
-          </h2>
-          <p className="text-sm text-[#1c1b1b] leading-relaxed mb-2">
-            We record on <a href="https://riverside.fm" target="_blank" rel="noopener noreferrer" className="text-[#994200] underline underline-offset-2">Riverside</a>. Sessions run under thirty minutes and the final episode is typically fifteen to twenty minutes. We handle all the editing.
-          </p>
-          <p className="text-sm text-[#1c1b1b] leading-relaxed mb-2">
-            All you need is your screen and your workflow. No slides or prep decks needed.
-          </p>
-          <p className="text-sm text-[#1c1b1b] leading-relaxed">
-            If you can walk through it like you&apos;d explain it to a teammate over a screen share, that&apos;s exactly what we&apos;re after.
-          </p>
         </section>
 
         <div className="border-t border-[#ddc1b3]" />
