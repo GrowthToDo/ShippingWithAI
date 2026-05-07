@@ -23,6 +23,9 @@ export default function ThinkingThroughTopic() {
         <p className="text-lg text-[#1c1b1b] leading-relaxed mt-4">
           Our whole show is built on one promise: the viewer walks away able to <em>implement</em> something, not just nod along. This short exercise makes sure your episode delivers exactly that.
         </p>
+        <p className="text-lg text-[#1c1b1b] leading-relaxed mt-4">
+          It takes about 15 to 20 minutes. Fill in what you can with whatever clarity you have right now. There&apos;s no perfect answer needed.
+        </p>
       </div>
 
       <div className="border-t border-[#ddc1b3] mb-12" />
@@ -57,7 +60,7 @@ export default function ThinkingThroughTopic() {
               {
                 step: "02",
                 label: "Fill in your answers",
-                desc: "Work through the questions in your copy. Rough notes are fine, it doesn't need to be polished. The examples in the doc show what we're looking for.",
+                desc: "Work through the questions in your copy. Fill in what you can — incomplete is fine. The examples in the doc show what we're looking for.",
               },
               {
                 step: "03",
