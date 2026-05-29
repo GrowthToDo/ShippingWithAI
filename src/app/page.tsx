@@ -90,6 +90,17 @@ export default function Home() {
               </svg>
               YouTube
             </a>
+            <a
+              href="https://x.com/ShippingwithAI"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2.5 border border-[#d4ccba]/50 px-4 py-3 text-sm font-medium text-[#1b1c1b] hover:border-[#994200] hover:text-[#994200] transition-colors"
+            >
+              <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+              X
+            </a>
           </div>
         </section>
 
