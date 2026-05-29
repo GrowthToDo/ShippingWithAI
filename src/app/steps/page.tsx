@@ -54,7 +54,7 @@ export default function Steps() {
           <div className="flex-1">
             <p className="text-sm font-semibold text-[#1c1b1b]">Get your episode brief</p>
             <p className="text-sm text-[#1c1b1b] mt-1 leading-relaxed">
-              At least 3 days before the recording, we&apos;ll send you the questions we&apos;ll ask. Everything else you need to know is <Link href="/brief" className="text-[#994200] underline underline-offset-2">here</Link>.
+              The day before the recording, we&apos;ll send you the questions we&apos;ll ask. Everything else you need to know is <Link href="/brief" className="text-[#994200] underline underline-offset-2">here</Link>.
             </p>
           </div>
         </div>
