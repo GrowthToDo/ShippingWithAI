@@ -104,6 +104,16 @@ export default function BeforeWeRecord() {
             </div>
 
             <div className="flex gap-4">
+              <span className="text-2xl shrink-0">🔒</span>
+              <div>
+                <p className="text-sm font-semibold text-[#1c1b1b] mb-1">Keep proprietary data off screen</p>
+                <p className="text-sm text-[#1c1b1b] leading-relaxed">
+                  Everything you share on screen ends up in the recording, so check it before we go live. If your real workflow has client data, customer details, or anything covered by GDPR or an NDA, swap it out for dummy data or a mock setup before we start. The walkthrough should show how it works, not expose anything you or your clients wouldn&apos;t want public.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
               <span className="text-2xl shrink-0">🌐</span>
               <div>
                 <p className="text-sm font-semibold text-[#1c1b1b] mb-1">Stable internet</p>
