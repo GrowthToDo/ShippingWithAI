@@ -44,14 +44,22 @@ export default function RootLayout({
             >
               Shipping with AI
             </a>
-            <a
-              href="https://shippingwithai.substack.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm font-bold text-[#994200] hover:opacity-70 transition-opacity"
-            >
-              Watch
-            </a>
+            <div className="flex items-center gap-6">
+              <a
+                href="/episodes"
+                className="text-sm font-bold text-[#1b1c1b] hover:text-[#994200] transition-colors"
+              >
+                Episodes
+              </a>
+              <a
+                href="https://shippingwithai.substack.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-bold text-[#994200] hover:opacity-70 transition-opacity"
+              >
+                Watch
+              </a>
+            </div>
           </nav>
         </header>
 

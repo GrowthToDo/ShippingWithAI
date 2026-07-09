@@ -1,26 +1,44 @@
 import Image from "next/image";
+import { episodes } from "@/data/episodes";
 
 export default function Home() {
   return (
     <div>
 
       {/* Hero Band */}
-      <div className="bg-[#994200] text-white">
-        <div className="max-w-5xl mx-auto px-6 py-12 flex flex-col items-center text-center">
+      <div className="relative bg-[#994200] text-white overflow-hidden">
 
-          {/* Cover Art — capped at 220px on mobile, 320px on md+ */}
-          <div className="w-[220px] md:w-[320px] mb-8">
+        {/* Guest collage background */}
+        <div className="absolute inset-0 grid grid-cols-4 opacity-60">
+          {episodes.map((ep) => (
+            <div key={ep.youtubeId} className="relative aspect-square">
+              <Image
+                src={`https://img.youtube.com/vi/${ep.youtubeId}/maxresdefault.jpg`}
+                alt=""
+                fill
+                unoptimized
+                className="object-cover grayscale blur-[2px]"
+              />
+            </div>
+          ))}
+        </div>
+        <div className="absolute inset-0 bg-[#994200]/78" />
+
+        <div className="relative max-w-5xl mx-auto px-6 py-12 flex flex-col items-center text-center">
+
+          {/* Cover Art — capped at 88px on mobile, 120px on md+ */}
+          <div className="w-[88px] md:w-[120px] mb-6">
             <Image
               src="/cover.png"
               alt="Shipping with AI podcast cover art"
-              width={320}
-              height={320}
+              width={120}
+              height={120}
               className="w-full aspect-square object-cover rounded-full"
               priority
             />
           </div>
 
-          <h1 className="font-[family-name:var(--font-space-grotesk)] font-bold text-[2.25rem] md:text-[4rem] leading-[1.05] tracking-[-0.03em] max-w-3xl mb-6">
+          <h1 className="font-[family-name:var(--font-space-grotesk)] font-bold text-[1.875rem] md:text-[3rem] leading-[1.1] tracking-[-0.03em] max-w-3xl mb-5">
             The show where AI goes from hype{" "}
             <span className="inline-flex items-center align-middle mx-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-[0.8em] md:text-[0.75em]">
@@ -31,18 +49,21 @@ export default function Home() {
             implementation.
           </h1>
 
-          <p className="text-base md:text-[1.125rem] leading-[1.7] text-white/70 max-w-[540px] mb-12">
+          <p className="text-base md:text-[1.125rem] leading-[1.7] text-white/70 max-w-[540px] mb-10">
             Every episode is a real workflow, on screen, walked through by someone who already built it.
           </p>
 
-          <a
-            href="https://shippingwithai.substack.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-white text-[#994200] hover:bg-[#fcf9f8] font-bold text-base px-8 py-4 transition-colors"
-          >
-            Watch the Show →
-          </a>
+          <div className="w-full max-w-[480px] rounded-sm overflow-hidden shadow-lg">
+            <iframe
+              src="https://shippingwithai.substack.com/embed"
+              width="100%"
+              height="320"
+              style={{ border: "1px solid #EEE", background: "white" }}
+              frameBorder="0"
+              scrolling="no"
+              title="Subscribe to Shipping with AI on Substack"
+            />
+          </div>
 
         </div>
       </div>
