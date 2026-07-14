@@ -1,0 +1,94 @@
+import Image from "next/image";
+
+export default function SessionChecklist() {
+  return (
+    <main className="max-w-2xl mx-auto px-6 pt-16 pb-32">
+
+      {/* Visual anchor */}
+      <div className="mb-10 flex items-center gap-3">
+        <Image src="/cover.png" alt="Shipping with AI" width={40} height={40} className="rounded-full object-cover" />
+        <p className="text-sm font-semibold uppercase tracking-widest text-[#994200]">
+          While We&apos;re Recording
+        </p>
+      </div>
+
+      {/* Header */}
+      <div className="mb-10">
+        <h1 className="text-4xl sm:text-5xl font-semibold font-[family-name:var(--font-space-grotesk)] tracking-tight text-[#1c1b1b] mb-5">
+          Session checklist
+        </h1>
+        <p className="text-lg text-[#1c1b1b] leading-relaxed">
+          A few things to keep an eye on once we&apos;re live, since we&apos;re all in the same Riverside room together.
+        </p>
+      </div>
+
+      <div className="border-t border-[#ddc1b3] mb-12" />
+
+      <div className="space-y-12">
+
+        {/* Checklist */}
+        <section>
+          <h2 className="text-xl font-semibold font-[family-name:var(--font-space-grotesk)] text-[#1c1b1b] mb-6">
+            The checklist
+          </h2>
+          <div className="space-y-6">
+
+            <div className="flex gap-4">
+              <span className="text-2xl shrink-0">🖼️</span>
+              <div>
+                <p className="text-sm font-semibold text-[#1c1b1b] mb-1">Keep your framing tight</p>
+                <p className="text-sm text-[#1c1b1b] leading-relaxed">
+                  Since it&apos;s three of us on screen at once, try not to leave too much space above your head. Frame yourself the way you would for a normal video call, eyes roughly in the upper third of the frame, not centered with a lot of headroom.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <span className="text-2xl shrink-0">🪟</span>
+              <div>
+                <p className="text-sm font-semibold text-[#1c1b1b] mb-1">Close Riverside&apos;s floating window when you screen share</p>
+                <p className="text-sm text-[#1c1b1b] leading-relaxed">
+                  When you start sharing your screen, Riverside pops up a small floating window with everyone&apos;s cameras on top of whatever you&apos;re sharing. Close or minimize it once you&apos;re sharing, so the recording captures your screen cleanly.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <span className="text-2xl shrink-0">👀</span>
+              <div>
+                <p className="text-sm font-semibold text-[#1c1b1b] mb-1">Show it, don&apos;t just describe it</p>
+                <p className="text-sm text-[#1c1b1b] leading-relaxed">
+                  If you&apos;re talking about a step in your workflow, put it on screen. The show-and-tell is what makes an episode useful, so whatever you&apos;re describing, make sure it&apos;s actually visible.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <div className="border-t border-[#ddc1b3] border-dashed" />
+
+        <p className="text-sm text-[#1c1b1b]/60 italic">
+          This list is still growing. More items to come.
+        </p>
+
+        <div className="border-t border-[#ddc1b3]" />
+
+        {/* Sign-off */}
+        <div className="flex items-center gap-4 pt-2">
+          <div className="flex -space-x-2">
+            <Image src="/gautham.png" alt="Gautham" width={40} height={40} className="rounded-full object-cover object-top border-2 border-[#EBE2CF]" />
+            <Image src="/rahul.jpg" alt="Rahul" width={40} height={40} className="rounded-full object-cover object-top border-2 border-[#EBE2CF]" />
+          </div>
+          <div>
+            <p className="text-sm font-semibold text-[#1c1b1b]">
+              None of this is strict. Just things that make the edit easier.
+            </p>
+            <p className="text-sm text-[#994200] mt-0.5">Gautham & Rahul</p>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  );
+}
