@@ -53,7 +53,7 @@ export default function Home() {
             Every episode is a real workflow, on screen, walked through by someone who already built it.
           </p>
 
-          <div className="w-full max-w-[480px] rounded-sm overflow-hidden shadow-lg">
+          <div className="w-full max-w-[480px] rounded-3xl overflow-hidden shadow-lg">
             <iframe
               src="https://shippingwithai.substack.com/embed"
               width="100%"
