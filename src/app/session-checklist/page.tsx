@@ -26,10 +26,75 @@ export default function SessionChecklist() {
 
       <div className="space-y-12">
 
+        {/* Double-check section */}
+        <section>
+          <h2 className="text-xl font-semibold font-[family-name:var(--font-space-grotesk)] text-[#1c1b1b] mb-2">
+            Quick double-check before we roll
+          </h2>
+          <p className="text-sm text-[#1c1b1b] leading-relaxed mb-6">
+            The guest already went through <a href="/record" className="text-[#994200] underline underline-offset-2">the pre-recording checklist</a>, but a few of those items aren&apos;t visible on camera, so it&apos;s worth a quick spoken confirmation the moment we&apos;re live.
+          </p>
+          <div className="space-y-6">
+
+            <div className="flex gap-4">
+              <span className="text-2xl shrink-0">📵</span>
+              <div>
+                <p className="text-sm font-semibold text-[#1c1b1b] mb-1">Phone on silent</p>
+                <p className="text-sm text-[#1c1b1b] leading-relaxed">
+                  Ask: is your phone on silent and face down? A buzz or a notification banner mid-recording is obvious on playback even when it barely registers live.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <span className="text-2xl shrink-0">🚪</span>
+              <div>
+                <p className="text-sm font-semibold text-[#1c1b1b] mb-1">Door closed, people around them know</p>
+                <p className="text-sm text-[#1c1b1b] leading-relaxed">
+                  Ask: is the door closed, and do the people around them know they&apos;re recording for the next thirty minutes? Someone walking in or a conversation in the background is hard to edit around.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <span className="text-2xl shrink-0">🎧</span>
+              <div>
+                <p className="text-sm font-semibold text-[#1c1b1b] mb-1">Headphones, not speakers</p>
+                <p className="text-sm text-[#1c1b1b] leading-relaxed">
+                  Confirm they&apos;re on headphones. If they&apos;re on speakers, the audio bleeds across mics and it can&apos;t be fixed in editing, so catch it before we&apos;re rolling for real.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <span className="text-2xl shrink-0">🔒</span>
+              <div>
+                <p className="text-sm font-semibold text-[#1c1b1b] mb-1">Proprietary data swapped out</p>
+                <p className="text-sm text-[#1c1b1b] leading-relaxed">
+                  Ask: is there anything on screen they need to swap for dummy data before we start, client details, customer data, anything under an NDA? Easier to catch now than after it&apos;s in the recording.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <span className="text-2xl shrink-0">💧</span>
+              <div>
+                <p className="text-sm font-semibold text-[#1c1b1b] mb-1">Water within reach</p>
+                <p className="text-sm text-[#1c1b1b] leading-relaxed">
+                  Thirty minutes of talking is more than people expect. A quick check that they have water nearby saves an awkward pause later.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <div className="border-t border-[#ddc1b3]" />
+
         {/* Checklist */}
         <section>
           <h2 className="text-xl font-semibold font-[family-name:var(--font-space-grotesk)] text-[#1c1b1b] mb-6">
-            The checklist
+            While we&apos;re recording
           </h2>
           <div className="space-y-6">
 
