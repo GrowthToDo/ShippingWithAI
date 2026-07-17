@@ -77,6 +77,26 @@ export default function SessionChecklist() {
             </div>
 
             <div className="flex gap-4">
+              <span className="text-2xl shrink-0">🔕</span>
+              <div>
+                <p className="text-sm font-semibold text-[#1c1b1b] mb-1">Notification apps closed</p>
+                <p className="text-sm text-[#1c1b1b] leading-relaxed">
+                  Ask: is WhatsApp, Slack, or anything else that pings closed or muted on the laptop? Even on headphones, a message sound lands mid-sentence and pulls you out of the flow. Quitting those apps for thirty minutes keeps the recording, and your head, clean.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <span className="text-2xl shrink-0">🧹</span>
+              <div>
+                <p className="text-sm font-semibold text-[#1c1b1b] mb-1">Close the windows you don&apos;t need</p>
+                <p className="text-sm text-[#1c1b1b] leading-relaxed">
+                  Ask: are there extra windows and tabs open beyond what the demo needs? A screen share with twenty windows behind it looks messy on playback, and there&apos;s always a risk something personal ends up on camera. Close everything except what we&apos;re going to show.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
               <span className="text-2xl shrink-0">💧</span>
               <div>
                 <p className="text-sm font-semibold text-[#1c1b1b] mb-1">Water within reach</p>
@@ -86,6 +106,24 @@ export default function SessionChecklist() {
               </div>
             </div>
 
+          </div>
+        </section>
+
+        <div className="border-t border-[#ddc1b3]" />
+
+        {/* How we'll start */}
+        <section>
+          <h2 className="text-xl font-semibold font-[family-name:var(--font-space-grotesk)] text-[#1c1b1b] mb-6">
+            How we&apos;ll start
+          </h2>
+          <div className="flex gap-4">
+            <span className="text-2xl shrink-0">🎬</span>
+            <div>
+              <p className="text-sm font-semibold text-[#1c1b1b] mb-1">3, 2, 1, and straight into the first question</p>
+              <p className="text-sm text-[#1c1b1b] leading-relaxed">
+                There&apos;s no intro and no hi-and-welcome on the recording. We&apos;ll say the recording is starting, count 3, 2, 1, and ask the first question directly. The episode intro gets made afterwards: we take the transcript, write an intro script from it, and one of us records it separately. So don&apos;t wait for a warm-up, the first thing you say is already the episode.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -128,6 +166,24 @@ export default function SessionChecklist() {
               </div>
             </div>
 
+          </div>
+        </section>
+
+        <div className="border-t border-[#ddc1b3]" />
+
+        {/* When we're done */}
+        <section>
+          <h2 className="text-xl font-semibold font-[family-name:var(--font-space-grotesk)] text-[#1c1b1b] mb-6">
+            When we&apos;re done
+          </h2>
+          <div className="flex gap-4">
+            <span className="text-2xl shrink-0">⏳</span>
+            <div>
+              <p className="text-sm font-semibold text-[#1c1b1b] mb-1">Don&apos;t exit Riverside right away</p>
+              <p className="text-sm text-[#1c1b1b] leading-relaxed">
+                Riverside records locally on your machine and uploads the files in the background. When we wrap, keep the tab open until it says the upload is complete. Closing it early can lose the high-quality local recording, and that&apos;s the one we edit from.
+              </p>
+            </div>
           </div>
         </section>
 
