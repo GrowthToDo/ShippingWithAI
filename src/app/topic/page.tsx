@@ -21,10 +21,10 @@ export default function ThinkingThroughTopic() {
           Before we book a time and hit record, we do one thing first: lock in the topic together.
         </p>
         <p className="text-lg text-[#1c1b1b] leading-relaxed mt-4">
-          Our whole show is built on one promise: the viewer walks away able to <em>implement</em> something, not just nod along. This short exercise makes sure your episode delivers exactly that.
+          Our whole show is built on one promise: the viewer walks away able to <em>implement</em> something, not just nod along. Getting the topic right up front is what makes that happen.
         </p>
         <p className="text-lg text-[#1c1b1b] leading-relaxed mt-4">
-          It takes about 15 to 20 minutes. Fill in what you can with whatever clarity you have right now. There&apos;s no perfect answer needed.
+          Read through this, have a think, and we&apos;ll take it from there over email.
         </p>
       </div>
 
@@ -60,66 +60,18 @@ export default function ThinkingThroughTopic() {
           </p>
         </section>
 
-        {/* What's in the doc */}
+        {/* What we're looking for */}
         <section>
           <h2 className="text-xl font-semibold font-[family-name:var(--font-space-grotesk)] text-[#1c1b1b] mb-4">
-            What&apos;s in the doc
+            What we&apos;re looking for
           </h2>
           <p className="text-sm text-[#1c1b1b] leading-relaxed mb-4">
-            It&apos;s a short template, seven questions, none of them hard. Together they help us figure out who this episode is for, what changes for them, and why you&apos;re the right person to show it.
+            Before we lock the direction, we need clarity on a few things: who this episode is for, what changes for them after watching, and why you&apos;re the right person to show it.
           </p>
           <p className="text-sm text-[#1c1b1b] leading-relaxed">
-            Things like: who&apos;s watching, what they can do after the episode that they couldn&apos;t before, what makes you the right person to show this, and the one bold claim the episode opens with. Examples are given for each so you can see what &ldquo;good&rdquo; looks like.
+            Things like: who&apos;s watching, what they can do after the episode that they couldn&apos;t before, what makes you the right person to show this, and the one bold claim the episode opens with. Have a think about these before we talk.
           </p>
         </section>
-
-        {/* Steps */}
-        <section>
-          <h2 className="text-xl font-semibold font-[family-name:var(--font-space-grotesk)] text-[#1c1b1b] mb-5">
-            Here&apos;s what to do
-          </h2>
-          <div className="space-y-3">
-            {[
-              {
-                step: "01",
-                label: "Click the link below",
-                desc: "It'll take you straight to Google Docs and prompt you to make a copy. That copy is yours to fill in.",
-              },
-              {
-                step: "02",
-                label: "Fill in your answers",
-                desc: "Work through the questions in your copy. Fill in what you can — incomplete is fine. The examples in the doc show what we're looking for.",
-              },
-              {
-                step: "03",
-                label: "Share it back with us",
-                desc: "Once you're done, set sharing to \"Anyone with the link can edit\", copy the link, and send it back to us.",
-              },
-            ].map(({ step, label, desc }) => (
-              <div key={step} className="flex gap-5 p-4 bg-[#f0ebe9] rounded-sm">
-                <span className="text-2xl font-bold text-[#994200] tabular-nums leading-none shrink-0 mt-0.5">
-                  {step}
-                </span>
-                <div>
-                  <p className="text-sm font-semibold text-[#1c1b1b]">{label}</p>
-                  <p className="text-sm text-[#1c1b1b] mt-0.5">{desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* CTA */}
-        <div>
-          <a
-            href="https://docs.google.com/document/d/1a4SPsOv2_1Vtoo_FQ8sQhIZ9CxjBT6-laB4os_bEx4Q/copy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-[#994200] text-white text-sm font-semibold px-6 py-3 rounded-sm hover:bg-[#7a3500] transition-colors"
-          >
-Make a copy of the doc
-          </a>
-        </div>
 
         <div className="border-t border-[#ddc1b3]" />
 
@@ -131,7 +83,7 @@ Make a copy of the doc
           </div>
           <div>
             <p className="text-sm font-semibold text-[#1c1b1b]">
-              Once we have your answers, we&apos;ll align on the direction and book the recording.
+              We&apos;ll follow up by email to align on the direction and book the recording.
             </p>
             <p className="text-sm text-[#994200] mt-0.5">Gautham & Rahul</p>
           </div>
