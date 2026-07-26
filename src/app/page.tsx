@@ -50,7 +50,8 @@ export default function Home() {
           </h1>
 
           <p className="text-base md:text-[1.125rem] leading-[1.7] text-white/70 max-w-[540px] mb-10">
-            Every episode is a real workflow, on screen, walked through by someone who already built it.
+            Every episode is a real workflow, on screen, walked through by someone who already built it. Made for
+            founders and operators who&apos;d rather ship with AI than talk about it.
           </p>
 
           <div className="w-full max-w-[480px] rounded-3xl overflow-hidden shadow-lg">

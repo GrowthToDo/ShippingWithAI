@@ -53,7 +53,9 @@ export default function ThinkingThroughTopic() {
             ))}
           </ul>
           <p className="text-sm text-[#1c1b1b] leading-relaxed mb-4">
-            One thing to keep in mind: the people watching are smart but not necessarily technical. The best episodes show something genuinely impressive in a way that makes the first step feel doable. You don&apos;t need to dumb it down. Just bring them in.
+            One thing to keep in mind: the people watching are founders and operators of small businesses and agencies,
+            smart but not necessarily technical. The best episodes show something genuinely impressive in a way that
+            makes the first step feel doable. You don&apos;t need to dumb it down. Just bring them in.
           </p>
           <p className="text-sm text-[#1c1b1b] leading-relaxed">
             If you&apos;re deciding between a few options, go with the one that changed something real for you and that someone could realistically start using the same week.
