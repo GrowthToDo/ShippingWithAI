@@ -56,8 +56,7 @@ export default function Home() {
           </p>
 
           <p className="text-sm md:text-[0.9375rem] font-semibold text-white/85 tracking-wide">
-            {`${episodes.length} episodes and counting`} &middot; builders from impress.ai, Zoko, Superjoin, and an
-            Airbnb host in Goa
+            {`${episodes.length} episodes and counting`} &middot; builders from impress.ai, Zoko, Superjoin, and more
           </p>
 
         </div>
