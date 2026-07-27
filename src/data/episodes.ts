@@ -70,4 +70,18 @@ export const episodes: Episode[] = [
     youtubeId: "7f2Ee8_PwZs",
     substackUrl: "https://shippingwithai.substack.com/p/hire-an-ai-intern-in-10-minutes-manas",
   },
+  {
+    title: "She Raised 7 Figures in Sponsorships by Automating LinkedIn With AI",
+    guest: "Sherry Jiang",
+    company: "Peek Money",
+    youtubeId: "WZW7n37quOI",
+    substackUrl: "https://shippingwithai.substack.com/p/she-raised-7-figures-in-sponsorships",
+  },
+  {
+    title: "How a VC Runs His Investment Workflow on AI Agents",
+    guest: "Binh Tran",
+    company: "avv.co",
+    youtubeId: "aHIzuZObWHM",
+    substackUrl: "https://shippingwithai.substack.com/p/how-a-vc-runs-his-investment-workflow-23b",
+  },
 ];

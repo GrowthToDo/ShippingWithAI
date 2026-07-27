@@ -2,9 +2,9 @@ import Image from "next/image";
 import { episodes } from "@/data/episodes";
 
 // Homepage proof cards: hand-picked episodes that sell the promise fastest.
-// Sharath (non-technical icon), Sushant (hard outcome number), Vinayak
-// (title literally echoes the "steal" promise).
-const featuredIds = ["2BlVAtzeusE", "tlbIptJtw5I", "jTe5Eeh9I3E"];
+// Sherry (sponsorships/growth), Binh (VC investment workflow), Tiago
+// (real estate agent workflow).
+const featuredIds = ["WZW7n37quOI", "aHIzuZObWHM", "7s78wPJnKB0"];
 const featured = featuredIds
   .map((id) => episodes.find((e) => e.youtubeId === id))
   .filter((e): e is (typeof episodes)[number] => Boolean(e));
