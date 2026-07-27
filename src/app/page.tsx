@@ -1,6 +1,14 @@
 import Image from "next/image";
 import { episodes } from "@/data/episodes";
 
+// Homepage proof cards: hand-picked episodes that sell the promise fastest.
+// Sharath (non-technical icon), Sushant (hard outcome number), Vinayak
+// (title literally echoes the "steal" promise).
+const featuredIds = ["2BlVAtzeusE", "tlbIptJtw5I", "jTe5Eeh9I3E"];
+const featured = featuredIds
+  .map((id) => episodes.find((e) => e.youtubeId === id))
+  .filter((e): e is (typeof episodes)[number] => Boolean(e));
+
 export default function Home() {
   return (
     <div>
@@ -39,22 +47,83 @@ export default function Home() {
           </div>
 
           <h1 className="font-[family-name:var(--font-space-grotesk)] font-bold text-[1.875rem] md:text-[3rem] leading-[1.1] tracking-[-0.03em] max-w-3xl mb-5">
-            The show where AI goes from hype{" "}
-            <span className="inline-flex items-center align-middle mx-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-[0.8em] md:text-[0.75em]">
-                <line x1="5" y1="12" x2="19" y2="12" />
-                <polyline points="12 5 19 12 12 19" />
-              </svg>
-            </span>{" "}
-            implementation.
+            Every episode is a workflow you can <span className="italic">steal.</span>
           </h1>
 
-          <p className="text-base md:text-[1.125rem] leading-[1.7] text-white/70 max-w-[540px] mb-10">
-            Every episode is a real workflow, on screen, walked through by someone who already built it. Made for
-            founders and operators who&apos;d rather ship with AI than talk about it.
+          <p className="text-base md:text-[1.125rem] leading-[1.7] text-white/70 max-w-[540px] mb-8">
+            Real builders share their screen and walk through an AI workflow they actually run, end to end. Made for
+            non-technical founders and operators who&apos;d rather ship with AI than study it.
           </p>
 
-          <div className="w-full max-w-[480px] rounded-3xl overflow-hidden shadow-lg">
+          <p className="text-sm md:text-[0.9375rem] font-semibold text-white/85 tracking-wide">
+            {`${episodes.length} episodes and counting`} &middot; builders from impress.ai, Zoko, Superjoin, and an
+            Airbnb host in Goa
+          </p>
+
+        </div>
+      </div>
+
+      {/* Content below hero */}
+      <div className="max-w-5xl mx-auto px-6 py-10">
+
+        {/* Proof: start with one */}
+        <section className="max-w-[900px] mx-auto mb-12 mt-2">
+          <p className="text-xs uppercase tracking-widest text-[#994200] font-semibold mb-5 text-center">
+            Start with one of these
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {featured.map((ep) => (
+              <a
+                key={ep.youtubeId}
+                href={ep.substackUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group border border-[#d4ccba]/40 bg-[#E5DCC9]/30 overflow-hidden"
+              >
+                <div className="relative aspect-video overflow-hidden">
+                  <Image
+                    src={`https://img.youtube.com/vi/${ep.youtubeId}/maxresdefault.jpg`}
+                    alt={ep.title}
+                    fill
+                    unoptimized
+                    className="object-cover group-hover:scale-[1.03] transition-transform"
+                  />
+                </div>
+                <div className="p-4">
+                  <p className="font-[family-name:var(--font-space-grotesk)] font-bold text-[#1b1c1b] text-sm leading-snug group-hover:text-[#994200] transition-colors">
+                    {ep.title}
+                  </p>
+                  <p className="text-xs text-[#564339]/70 mt-1.5">
+                    {ep.guest} &middot; {ep.company}
+                  </p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        <hr className="border-t border-[#d4ccba]/40 mb-12" />
+
+        {/* Narrative */}
+        <section className="max-w-[640px] mx-auto mb-12">
+          <h2 className="font-[family-name:var(--font-space-grotesk)] text-[1.75rem] md:text-[2.25rem] font-bold text-[#1b1c1b] mb-5 tracking-tight leading-tight">
+            You just need to see it done once.
+          </h2>
+          <p className="text-base md:text-[1.125rem] leading-[1.8] text-[#564339]">
+            Most people assume AI is complicated, something meant for engineers. Then they watch a real person build the real thing on screen: the tools, the prompts, the decisions, the mistakes. The guests are builders; you don&apos;t have to be. If you can follow a screen share, you can copy the workflow. This is where AI goes from hype to implementation.
+          </p>
+        </section>
+
+        <hr className="border-t border-[#d4ccba]/40 mb-12" />
+
+        {/* Watch & Subscribe */}
+        <section className="max-w-[640px] mx-auto mb-12">
+
+          {/* Subscribe embed — after the proof, when they've felt the need */}
+          <p className="text-xs uppercase tracking-widest text-[#994200] font-semibold mb-5">
+            Get next week&apos;s workflow in your inbox
+          </p>
+          <div className="w-full max-w-[480px] rounded-3xl overflow-hidden shadow-lg mb-10">
             <iframe
               src="https://shippingwithai.substack.com/embed"
               width="100%"
@@ -65,29 +134,6 @@ export default function Home() {
               title="Subscribe to Shipping with AI on Substack"
             />
           </div>
-
-        </div>
-      </div>
-
-      {/* Content below hero */}
-      <div className="max-w-5xl mx-auto px-6 py-10">
-
-        <hr className="border-t border-[#d4ccba]/40 mb-12" />
-
-        {/* Narrative */}
-        <section className="max-w-[640px] mx-auto mb-12">
-          <h2 className="font-[family-name:var(--font-space-grotesk)] text-[1.75rem] md:text-[2.25rem] font-bold text-[#1b1c1b] mb-5 tracking-tight leading-tight">
-            It&apos;s simpler than you think.
-          </h2>
-          <p className="text-base md:text-[1.125rem] leading-[1.8] text-[#564339]">
-            Most people assume it&apos;s complicated. It&apos;s not. You just need to see it done once. Every guest walks through a real workflow on screen, the tools, the prompts, the decisions. Every episode is a workflow you can steal.
-          </p>
-        </section>
-
-        <hr className="border-t border-[#d4ccba]/40 mb-12" />
-
-        {/* Watch & Subscribe */}
-        <section className="max-w-[640px] mx-auto mb-12">
 
           {/* Tier 1 — where to actually subscribe/watch the full show */}
           <p className="text-xs uppercase tracking-widest text-[#994200] font-semibold mb-5">Watch &amp; Subscribe</p>
@@ -206,7 +252,7 @@ export default function Home() {
           <div className="space-y-6 text-base md:text-[1.125rem] leading-[1.8] text-[#564339]">
             <div className="space-y-3">
               <p>
-                Gautham got Rahul started. One tool, one workflow, one real demonstration and that was enough to change how he worked entirely.
+                Gautham got Rahul started. One tool, one workflow, one real demonstration and that was enough to change how Rahul worked entirely.
               </p>
               <p>
                 That&apos;s the show. If you could do that for one person, you could do it for thousands. Every episode is us trying to give someone else that same moment and learning something new in the process ourselves.
@@ -267,15 +313,13 @@ export default function Home() {
 {/* Final CTA */}
         <section className="text-center py-12 border-t border-b border-[#d4ccba]/40 mb-12">
           <h3 className="font-[family-name:var(--font-space-grotesk)] text-[2rem] md:text-[2.5rem] font-bold mb-6 tracking-tight">
-            Stop reading. Start shipping.
+            Watch one. Steal it. Ship it this week.
           </h3>
           <a
-            href="https://shippingwithai.substack.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/episodes"
             className="inline-block bg-[#994200] text-white px-8 py-4 font-bold text-base hover:opacity-90 transition-opacity"
           >
-            Start Watching
+            Pick an episode to steal
           </a>
         </section>
 

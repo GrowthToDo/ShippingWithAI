@@ -16,7 +16,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "Shipping with AI",
-  description: "The show where AI goes from hype to implementation.",
+  description: "Every episode is an AI workflow you can steal. Real builders screen-share workflows they actually run, made for non-technical founders and operators.",
   icons: {
     icon: "/favicon.png",
     apple: "/favicon.png",

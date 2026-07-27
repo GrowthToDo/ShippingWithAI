@@ -8,6 +8,13 @@ export type Episode = {
 
 export const episodes: Episode[] = [
   {
+    title: "The AI Influencer Workflow: A Founder's TikTok Playbook",
+    guest: "Ayush Chaturvedi",
+    company: "vibe",
+    youtubeId: "jwHAu8Fvg2Y",
+    substackUrl: "https://shippingwithai.substack.com/p/the-ai-influencer-workflow-a-founder",
+  },
+  {
     title: "Why Your Vibe Coded App Isn't Ready to Ship",
     guest: "Vaisagh Viswanathan",
     company: "Impress.ai",
