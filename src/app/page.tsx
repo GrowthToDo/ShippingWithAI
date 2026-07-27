@@ -9,6 +9,13 @@ const featured = featuredIds
   .map((id) => episodes.find((e) => e.youtubeId === id))
   .filter((e): e is (typeof episodes)[number] => Boolean(e));
 
+// Hero collage: the three showcase episodes plus Sharath (Airbnb host) to
+// fill the fourth slot in the grid-cols-4 row.
+const heroCollageIds = [...featuredIds, "2BlVAtzeusE"];
+const heroCollage = heroCollageIds
+  .map((id) => episodes.find((e) => e.youtubeId === id))
+  .filter((e): e is (typeof episodes)[number] => Boolean(e));
+
 export default function Home() {
   return (
     <div>
@@ -18,7 +25,7 @@ export default function Home() {
 
         {/* Guest collage background */}
         <div className="absolute inset-0 grid grid-cols-4 opacity-60">
-          {episodes.map((ep) => (
+          {heroCollage.map((ep) => (
             <div key={ep.youtubeId} className="relative aspect-square">
               <Image
                 src={`https://img.youtube.com/vi/${ep.youtubeId}/maxresdefault.jpg`}
