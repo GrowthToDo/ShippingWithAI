@@ -9,7 +9,7 @@ export default function Episodes() {
       <div className="mb-10 flex items-center gap-3">
         <Image src="/cover.png" alt="Shipping with AI" width={40} height={40} className="rounded-full object-cover" />
         <p className="text-sm font-semibold uppercase tracking-widest text-[#994200]">
-          {episodes.length} episodes and counting
+          New workflow every week
         </p>
       </div>
 
@@ -36,7 +36,7 @@ export default function Episodes() {
           >
             <div className="relative aspect-video overflow-hidden rounded-sm ring-1 ring-[#d4ccba]/50 mb-3">
               <Image
-                src={`https://img.youtube.com/vi/${ep.youtubeId}/maxresdefault.jpg`}
+                src={`https://img.youtube.com/vi/${ep.youtubeId}/hqdefault.jpg`}
                 alt={ep.title}
                 fill
                 unoptimized

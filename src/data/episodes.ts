@@ -8,6 +8,34 @@ export type Episode = {
 
 export const episodes: Episode[] = [
   {
+    title: "Three AI Employees Cost Him $3,000 a Month and Never Quit",
+    guest: "Itamar Novick",
+    company: "Recursive Ventures",
+    youtubeId: "C5TrZsZVqH8",
+    substackUrl: "https://shippingwithai.substack.com/p/three-ai-employees-cost-him-3000",
+  },
+  {
+    title: "Claude and Obsidian Turned Her Inbox Into a Daily Brief",
+    guest: "Natasha Lee",
+    company: "AI Consultant",
+    youtubeId: "AhQVNA_9MRE",
+    substackUrl: "https://shippingwithai.substack.com/p/claude-and-obsidian-turned-her-inbox",
+  },
+  {
+    title: "The Claude Code Workflow That Turns a Calendar Invite Into a Sales Demo",
+    guest: "Bhanu",
+    company: "SiteGPT.ai",
+    youtubeId: "NnatCI_rREA",
+    substackUrl: "https://shippingwithai.substack.com/p/the-claude-code-workflow-that-turns",
+  },
+  {
+    title: "She Wrote as Much in 1 Month With AI as in Her First 8 Years in VC",
+    guest: "Melody Koh",
+    company: "NextView Ventures",
+    youtubeId: "-GxELVga1wE",
+    substackUrl: "https://shippingwithai.substack.com/p/she-wrote-as-much-in-1-month-with",
+  },
+  {
     title: "The AI Influencer Workflow: A Founder's TikTok Playbook",
     guest: "Ayush Chaturvedi",
     company: "vibe",
