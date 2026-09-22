@@ -46,12 +46,6 @@ export default function RootLayout({
             </a>
             <div className="flex items-center gap-6">
               <a
-                href="/episodes"
-                className="text-sm font-bold text-[#1b1c1b] hover:text-[#994200] transition-colors"
-              >
-                Episodes
-              </a>
-              <a
                 href="https://shippingwithai.substack.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -88,7 +82,7 @@ export default function RootLayout({
               </a>
 
               <a
-                href="https://www.youtube.com/@ShippingwAI"
+                href="https://www.youtube.com/@shippingwithai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs font-bold uppercase tracking-widest hover:text-[#994200] transition-colors flex items-center gap-2"

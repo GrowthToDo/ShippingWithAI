@@ -28,7 +28,7 @@ export default function Home() {
           {heroCollage.map((ep) => (
             <div key={ep.youtubeId} className="relative aspect-square">
               <Image
-                src={`https://img.youtube.com/vi/${ep.youtubeId}/maxresdefault.jpg`}
+                src={`https://img.youtube.com/vi/${ep.youtubeId}/hqdefault.jpg`}
                 alt=""
                 fill
                 unoptimized
@@ -62,10 +62,6 @@ export default function Home() {
             non-technical founders and operators who&apos;d rather ship with AI than study it.
           </p>
 
-          <p className="text-sm md:text-[0.9375rem] font-semibold text-white/85 tracking-wide">
-            New workflow every week &middot; builders from impress.ai, Zoko, Superjoin, and more
-          </p>
-
         </div>
       </div>
 
@@ -88,7 +84,7 @@ export default function Home() {
               >
                 <div className="relative aspect-video overflow-hidden">
                   <Image
-                    src={`https://img.youtube.com/vi/${ep.youtubeId}/maxresdefault.jpg`}
+                    src={`https://img.youtube.com/vi/${ep.youtubeId}/hqdefault.jpg`}
                     alt={ep.title}
                     fill
                     unoptimized
@@ -156,7 +152,7 @@ export default function Home() {
               Substack
             </a>
             <a
-              href="https://www.youtube.com/@ShippingwAI"
+              href="https://www.youtube.com/@shippingwithai"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2.5 rounded-md bg-[#994200] px-5 py-3.5 text-sm font-semibold text-white shadow-[0_4px_0_0_#5c2700] hover:bg-[#a84a00] active:translate-y-[3px] active:shadow-[0_1px_0_0_#5c2700] transition-all"
@@ -199,7 +195,7 @@ export default function Home() {
           <p className="text-[0.7rem] uppercase tracking-widest text-[#564339]/60 font-semibold mb-3">Clips &amp; Shorts</p>
           <div className="flex flex-wrap gap-2.5">
             <a
-              href="https://www.youtube.com/@ShippingwAI/shorts"
+              href="https://www.youtube.com/@shippingwithai/shorts"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube Shorts"
@@ -322,7 +318,9 @@ export default function Home() {
             Watch one. Steal it. Ship it this week.
           </h3>
           <a
-            href="/episodes"
+            href="https://shippingwithai.substack.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-[#994200] text-white px-8 py-4 font-bold text-base hover:opacity-90 transition-opacity"
           >
             Pick an episode to steal
