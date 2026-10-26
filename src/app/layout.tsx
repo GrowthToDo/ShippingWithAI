@@ -15,7 +15,17 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://shippingwith.ai"),
   title: "Shipping with AI",
+  openGraph: {
+    title: "Shipping with AI",
+    siteName: "Shipping with AI",
+    url: "/",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
   description: "Every episode is an AI workflow you can steal. Real builders screen-share workflows they actually run, made for non-technical founders and operators.",
   icons: {
     icon: "/favicon.png",

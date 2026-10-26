@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { pageMeta } from "../_og/meta";
+
+export const metadata = pageMeta("Before we hit record");
 
 export default function BeforeWeRecord() {
   return (

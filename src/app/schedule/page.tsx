@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Script from "next/script";
+import { pageMeta } from "../_og/meta";
+
+export const metadata = pageMeta("Pick a time to record");
 
 export default function Schedule() {
   return (

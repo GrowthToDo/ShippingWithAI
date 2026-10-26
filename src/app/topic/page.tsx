@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { pageMeta } from "../_og/meta";
+
+export const metadata = pageMeta("Let's think through the topic");
 
 export default function ThinkingThroughTopic() {
   return (

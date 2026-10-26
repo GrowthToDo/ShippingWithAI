@@ -11,6 +11,11 @@ const pages = [
     desc: "The pre-yes guest pitch page, sent in outreach before anything is confirmed.",
   },
   {
+    href: "/show-your-work/slides",
+    title: "Show Your Work: Slides",
+    desc: "Seven-slide deck screen-shared in the guest outreach video. Arrow keys to move, F for full screen.",
+  },
+  {
     href: "/steps",
     title: "Guest Process",
     desc: "Sent once a guest says yes. The four steps from there to a published episode.",

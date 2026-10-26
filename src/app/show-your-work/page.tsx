@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { pageMeta } from "../_og/meta";
+
+export const metadata = pageMeta("Show your work");
 
 // Pre-yes guest page: sent to prospective guests during outreach, before
 // anything is confirmed. Once a guest says yes, they get /steps.

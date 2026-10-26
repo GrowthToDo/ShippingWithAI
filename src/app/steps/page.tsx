@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { pageMeta } from "../_og/meta";
+
+export const metadata = pageMeta("Here's how it works");
 
 export default function Steps() {
   return (

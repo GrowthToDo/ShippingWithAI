@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { pageMeta } from "../_og/meta";
+
+export const metadata = pageMeta("Your episode brief");
 
 export default function Brief() {
   return (
