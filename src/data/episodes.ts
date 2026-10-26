@@ -8,6 +8,20 @@ export type Episode = {
 
 export const episodes: Episode[] = [
   {
+    title: "She Shipped a Website Page in 2 Hours With Claude Code",
+    guest: "Jigyasha",
+    company: "Nexford",
+    youtubeId: "5ozfF3UM7s0",
+    substackUrl: "https://shippingwithai.substack.com/p/she-shipped-a-website-page-in-2-hours",
+  },
+  {
+    title: "He Built His Support Bot in Claude Code, Then Moved to Grok Bot",
+    guest: "Max Del Vita",
+    company: "Symplehost.ai",
+    youtubeId: "I992ep0ozmc",
+    substackUrl: "https://shippingwithai.substack.com/p/he-built-his-support-bot-in-claude",
+  },
+  {
     title: "Three AI Employees Cost Him $3,000 a Month and Never Quit",
     guest: "Itamar Novick",
     company: "Recursive Ventures",

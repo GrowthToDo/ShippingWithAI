@@ -47,8 +47,9 @@ export default function ShowYourWork() {
             Who&apos;s watching
           </h2>
           <p className="text-sm text-[#1c1b1b] leading-relaxed mb-4">
-            Founders and operators of small businesses and agencies. Smart, but not necessarily technical. They&apos;re
-            not here for AI commentary; they&apos;re here to put AI to work this week.
+            People who want to put AI to work, not read about it: founders, operators, salespeople, consultants,
+            investors. Technical or not. They&apos;re not here for AI commentary; they watch to copy something and use
+            it the same week.
           </p>
           <p className="text-sm text-[#1c1b1b] leading-relaxed">
             The audience is deliberately small and exactly right: the kind of people who turn into customers, clients,
